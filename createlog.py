@@ -9,10 +9,15 @@ from datetime import datetime
 
 # Creates the logs folder if one doesn't already exist.
 if not (os.path.exists("./logs")):
+    print('"logs" folder doesnt exist, creating...')
     os.mkdir("./logs")
+    print('"logs" folder created')
 
 # Date time call for current date and time.
 dt = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+print("Log being created....")
 
 # Uses a system command to run system check program and logs the contents into a log file based on current date and time.
-os.system("python syscheck.py > .\logs\syslog{0}.txt".format(dt))
+os.system("python syscheck.py > ./logs/syslog{0}.txt".format(dt))
+
+print("Log complete!")
