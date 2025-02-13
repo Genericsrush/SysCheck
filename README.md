@@ -16,7 +16,7 @@ Installation
 
     Clone the repository:
 
-git clone https://github.com/Genericsrush/SysCheck.git
+    git clone https://github.com/Genericsrush/SysCheck.git
 
 Navigate to the project directory:
 
@@ -28,9 +28,9 @@ Install the required dependencies:
 
 Usage
 
-To run the system check and generate logs, execute the following command:
+    To run the system check and generate logs, execute the following command:
 
-python syscheck.py
+    python syscheck.py
 
 This will run the system check and output logs for analysis.
 File Descriptions
